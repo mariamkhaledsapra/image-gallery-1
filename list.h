@@ -5,7 +5,19 @@ struct Node
 	Node *prev;
 };
 
-class List
+void drawPicture(const vector<vector<int>>& image) {
+    for (const auto& row : image) {
+        for (int pixel : row) {
+            if (pixel == 1) {
+                cout << "*"; 
+            } else {
+                cout << " "; 
+            }
+        }
+        cout << endl;
+    }
+}
+class List //values ​​used by user during the program are stored in it
 {
 	Node *last;
 	Node *cursor;
@@ -16,4 +28,6 @@ public:
 	Node *getPrev();
 	Node *getNext();
 	int getData();
+	int getch();
+	int draw();
 };
