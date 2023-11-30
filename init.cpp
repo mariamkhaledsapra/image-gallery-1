@@ -7,8 +7,9 @@ int main()
 {       
     Image ice_cream = Image ("ice_cream");
     ice_cream.display();
-    // cout<<"-------------"<<endl;
     Image boat = Image ("boat");
     boat.display();
+    Image ghost = Image ("ghost");
+    ghost.display();
     return 0;
 }
