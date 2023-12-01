@@ -17,6 +17,8 @@ int main()
     water_melon.display();
     Image heart = Image ("heart");
     heart.display();
+    Image star = Image ("star");
+    star.display();
 
     return 0;
 }
