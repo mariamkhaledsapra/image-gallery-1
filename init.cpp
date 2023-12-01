@@ -11,5 +11,7 @@ int main()
     boat.display();
     Image ghost = Image ("ghost");
     ghost.display();
+    Image pizza= Image ("pizza");
+    pizza.display();
     return 0;
 }
