@@ -21,6 +21,8 @@ int main()
     star.display();
     Image tree = Image ("tree");
     tree.display();
+    Image bunny = Image ("bunny");
+    bunny.display();
 
     return 0;
 }
