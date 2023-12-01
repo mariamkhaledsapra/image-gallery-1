@@ -29,12 +29,6 @@ class Image
     int** canvas;
     string type;
 
-    public:
-    Image( string image_type){
-        canvas = get_canvas();
-        type=image_type;
-    }
-
     void ice_cream()
     {   
         int outline[][2] = {
@@ -389,7 +383,30 @@ class Image
             canvas[x[0]][x[1]] = color.green;
         }
     }
-    
+
+    void heart()
+    {   
+        int outline[][2] = {
+          
+        };
+
+        int red[][2] = {
+           
+        };
+
+        int x[2];
+        for (auto x : outline)
+        {   
+            canvas[x[0]][x[1]] = color.black;
+        }
+
+        for (auto x : red)
+        {   
+            canvas[x[0]][x[1]] = color.red;
+        }
+
+    }
+ 
     void get_image()
     {
         if (type == "ice_cream")
@@ -402,6 +419,14 @@ class Image
             pizza();
         else if (type == "water_melon")
             water_melon();
+        else if (type == "heart")
+            heart();
+    }
+    
+    public:
+    Image( string image_type){
+        canvas = get_canvas();
+        type=image_type;
     }
 
     void display()

@@ -15,5 +15,8 @@ int main()
     pizza.display();
     Image water_melon = Image ("water_melon");
     water_melon.display();
+    Image heart = Image ("heart");
+    heart.display();
+
     return 0;
 }
