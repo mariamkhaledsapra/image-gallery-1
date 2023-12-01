@@ -13,5 +13,7 @@ int main()
     ghost.display();
     Image pizza= Image ("pizza");
     pizza.display();
+    Image water_melon = Image ("water_melon");
+    water_melon.display();
     return 0;
 }
