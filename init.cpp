@@ -23,6 +23,7 @@ int main()
     tree.display();
     Image bunny = Image ("bunny");
     bunny.display();
-
+    Image bee = Image ("bee");
+    bee.display();
     return 0;
 }
