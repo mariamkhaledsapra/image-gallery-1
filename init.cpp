@@ -19,6 +19,8 @@ int main()
     heart.display();
     Image star = Image ("star");
     star.display();
+    Image tree = Image ("tree");
+    tree.display();
 
     return 0;
 }
